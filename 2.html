@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обмін вмістом</title>
+    <script>
+        function swapContent() {
+            var input1 = document.getElementById("input1");
+            var input2 = document.getElementById("input2");
+            
+            var temp = input1.value;
+            input1.value = input2.value;
+            input2.value = temp;
+        }
+    </script>
+</head>
+<body>
+    <h2>Обмін вмістом між інпутами</h2>
+    <input type="text" id="input1" value="ЗІЕІТ"><br>
+    <input type="text" id="input2" value="ЗНУ"><br>
+    <button onclick="swapContent()">Натисніть на мене</button>
+</body>
+</html>
